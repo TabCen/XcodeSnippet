@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>copy_str</string>
+	<string>snippet_p_c_s</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -17,7 +17,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>声明copy关键字的字符串</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MYCODE_property_copy_NSString</string>
+	<string>MY_property_copy_NSString</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

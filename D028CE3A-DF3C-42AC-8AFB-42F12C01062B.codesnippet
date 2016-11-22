@@ -3,28 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>snippet_btn_c</string>
+	<string>snippet_w_vc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIButton * &lt;#(id _Nonnull)#&gt;=nil;
-&lt;#(id _Nonnull)#&gt; = ({
-    UIButton *button = [[UIButton alloc]initWithFrame:&lt;#(CGRect)#&gt;];
-    button.backgroundColor = &lt;#(UIColor * _Nullable)#&gt;;
-    [button addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:UIControlEventTouchUpInside];
-    button;
-});
-[self.view addSubview:&lt;#(id _Nonnull)#&gt;];</string>
+	<string>    //创建根试图控制器
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    &lt;#class name#&gt; *vc =[[&lt;#class name#&gt; alloc]init];
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D3803241-3B47-4C79-81D5-7286815D86E3</string>
+	<string>D028CE3A-DF3C-42AC-8AFB-42F12C01062B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>button-复合语句创建方法</string>
+	<string>创建根试图控制器</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY_button_compound</string>
+	<string>MY_window_setRootViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

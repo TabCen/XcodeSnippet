@@ -3,28 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>snippet_btn_c</string>
+	<string>snippet_nav_rightBtn</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIButton * &lt;#(id _Nonnull)#&gt;=nil;
-&lt;#(id _Nonnull)#&gt; = ({
-    UIButton *button = [[UIButton alloc]initWithFrame:&lt;#(CGRect)#&gt;];
-    button.backgroundColor = &lt;#(UIColor * _Nullable)#&gt;;
-    [button addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:UIControlEventTouchUpInside];
-    button;
-});
-[self.view addSubview:&lt;#(id _Nonnull)#&gt;];</string>
+	<string>    UIBarButtonItem *right_Bar_Btn=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"&lt;#id imageName#&gt;"] style:UIBarButtonItemStylePlain target:self action:@selector(&lt;#id f_Name#&gt;)];
+    [right_Bar_Btn setTintColor: k_BaseColor];
+    
+    [self.navigationItem setRightBarButtonItem:right_Bar_Btn];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D3803241-3B47-4C79-81D5-7286815D86E3</string>
+	<string>02118AF3-85BA-42A6-9957-AF4AF632A24F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>button-复合语句创建方法</string>
+	<string>导航栏设置右边按钮</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MY_button_compound</string>
+	<string>MY_navigationItem_setRightBar</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

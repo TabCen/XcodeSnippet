@@ -3,21 +3,41 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>🈳️</string>
+	<string>snippet_create_sinleTon</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>///需要将静态数据放到方法外
+static &lt;#id ClassName#&gt; *shareFile = nil;
+
++(instancetype)allocWithZone:(struct _NSZone *)zone{
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        shareFile = [super allocWithZone:zone];
+    });
+    return shareFile;
+}
+
++(instancetype)instence{
+    shareFile = [[self alloc] init];
+    return shareFile;
+}
+
+-(id)copyWithZone:(NSZone *)zone{
+    return shareFile;
+}
+
+-(void)dealloc{}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DD8F7E38-7FA7-4A10-8C5D-213089FF3682</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>空</string>
+	<string>单例创建</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MYCODE_null</string>
+	<string>MY_SingleTon</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

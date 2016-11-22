@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>btn_n</string>
+	<string>snippet_btn_n</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    UIButton *&lt;#(id _Nonnull)#&gt; = [[UIButton alloc]initWithFrame:&lt;#(CGRect)#&gt;];
     &lt;#(id _Nonnull)#&gt;.backgroundColor = &lt;#(UIColor * _Nullable)#&gt;;
-    [&lt;#(id _Nonnull)#&gt; addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:&lt;#(UIControlEvents)#&gt;];
+    [&lt;#(id _Nonnull)#&gt; addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:&lt;#(id _Nonnull)#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>266907EE-8A62-48DC-A495-098A51AE989D</string>
@@ -20,7 +20,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>button的常规创建方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MYCODE_normal_button</string>
+	<string>MY_button_normal</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
