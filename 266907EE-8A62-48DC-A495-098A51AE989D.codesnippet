@@ -11,6 +11,8 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    UIButton *&lt;#(id _Nonnull)#&gt; = [[UIButton alloc]initWithFrame:&lt;#(CGRect)#&gt;];
     &lt;#(id _Nonnull)#&gt;.backgroundColor = &lt;#(UIColor * _Nullable)#&gt;;
+    [&lt;#(id _Nonnull)#&gt; setTitle:&lt;#id tittle#&gt; forState:UIControlStateNormal];
+    [&lt;#(id _Nonnull)#&gt; setTitleColor:&lt;# UIColor color#&gt; forState:UIControlStateNormal];
     [&lt;#(id _Nonnull)#&gt; addTarget:&lt;#(nullable id)#&gt; action:&lt;#(nonnull SEL)#&gt; forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:&lt;#(id _Nonnull)#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
